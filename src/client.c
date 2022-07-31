@@ -9,10 +9,10 @@ void rtgn_initClient(
     client->gameState = gameStateMemory;
     client->initGameState = initGameState;
     client->tickGameState = tickGameState;
-    client->initGameState(client->gameState);
+    client->initGameState(client->gameState, 1);
 }
 
-void rtgn_tickClient(rtgn_Client* client)
+void rtgn_tickClient(rtgn_Client* client, rtgn_Input* input)
 {
-    client->tickGameState(client->gameState);
+    client->tickGameState(client->gameState, input);
 }

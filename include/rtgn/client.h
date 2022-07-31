@@ -1,7 +1,7 @@
 #ifndef RTGN_CLIENT_H
 #define RTGN_CLIENT_H
 
-#include "./game_state.h"
+#include "./common_types.h"
 
 typedef struct rtgn_Client rtgn_Client;
 struct rtgn_Client
@@ -17,6 +17,6 @@ void rtgn_initClient(
     rtgn_init_game_state_f initGameState,
     rtgn_tick_game_state_f tickGameState);
 
-void rtgn_tickClient(rtgn_Client* client);
+void rtgn_tickClient(rtgn_Client* client, rtgn_Input* input);
 
 #endif
