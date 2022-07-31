@@ -8,6 +8,7 @@ add_subdirectory(examples/top_down_shooter)
 
 add_library(rtgn STATIC
     src/temp.c
+    src/tick_clock.c
     )
 
 target_include_directories(rtgn
