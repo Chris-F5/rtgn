@@ -1,0 +1,6 @@
+#ifndef RTGN_CONFIG_H
+#define RTGN_CONFIG_H
+
+#define RTGN_TCP_SERVER_QUEUE_REQUESTS 16
+
+#endif

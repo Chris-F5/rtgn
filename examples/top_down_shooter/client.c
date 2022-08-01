@@ -4,8 +4,9 @@
 #include <rtgn/client.h>
 #include <rtgn/tick_clock.h>
 #include <rtgn/common_types.h>
+#include <rtgn/network_address.h>
 
-#define TICK_NANO_DELAY (1000000000 / 2)
+#include "./config.h"
 
 typedef struct GameState GameState;
 struct GameState
@@ -30,9 +31,17 @@ void tickGameState(GameState* gameState, rtgn_Input* inputs) {
 
 int main()
 {
+    rtgn_networkAddress_t srvAddr;
     rtgn_Client client;
+
+    if(rtgn_networkAddress("127.0.0.1", SERVER_PORT, &srvAddr) < 0) {
+        fprintf(stderr, "invalid server address string\n");
+        exit(1);
+    }
+
     rtgn_initClient(
         &client,
+        srvAddr,
         malloc(sizeof(GameState)),
         (rtgn_init_game_state_f)initGameState,
         (rtgn_tick_game_state_f)tickGameState);
@@ -49,5 +58,8 @@ int main()
             i++;
         }
     }
+    
+    rtgn_destroyClient(&client);
+
     return 0;
 }
