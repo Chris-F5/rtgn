@@ -5,7 +5,7 @@
 
 #include "./common_types.h"
 
-#define RTGN_SRV_CON_STATE_EMPTY 0
+#define RTGN_SRV_CON_STATE_NO_CONNECTION 0
 #define RTGN_SRV_CON_STATE_NEW 1
 #define RTGN_SRV_CON_STATE_IDLE 2
 
@@ -23,6 +23,7 @@ struct rtgn_Server
 {
     int port;
     rtgn_tcpSrvSocket_t srvSocket;
+    void* packetBuffer;
     int maxConnections;
     rtgn_SrvCon* connections;
 };

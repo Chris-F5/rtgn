@@ -42,7 +42,10 @@ int tcpSrvSocket_accept(
     *con = accept(srvSock, NULL, NULL);
     if(*con < 0 && errno != EAGAIN && errno != EWOULDBLOCK)
         die("failed to accept connection from tcp server socket '%s'", strerror(errno));
-    return *con < 0 ? 0 : 1;
+    if(*con < 0) return 0;
+    if(fcntl(*con, F_SETFL, fcntl(*con, F_GETFL) | O_NONBLOCK) < 0)
+        die("failed to set nonblock flag on tcp server con socket '%s'", strerror(errno));
+    return 1;
 }
 
 void tcpSrvSocket_close(rtgn_tcpSrvSocket_t sock)

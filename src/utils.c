@@ -32,3 +32,13 @@ void die(const char* format, ...)
     va_end(vargs);
     exit(1);
 }
+
+void warn(const char* format, ...)
+{
+    va_list vargs;
+    va_start(vargs, format);
+    fprintf(stderr, "[RTGN WARNING] ");
+    vfprintf(stderr, format, vargs);
+    fprintf(stderr, "\n");
+    va_end(vargs);
+}

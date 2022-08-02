@@ -4,6 +4,8 @@
 #include <inttypes.h>
 #include <netinet/in.h>
 
+typedef uint16_t rtgn_srvConIndex_t;
+
 /* INPUT */
 #define RTGN_INPUT_FLAG_LEFT   (1<<0)
 #define RTGN_INPUT_FLAG_RIGHT  (1<<1)

@@ -10,6 +10,7 @@ add_library(rtgn STATIC
     src/client.c
     src/network_address.c
     src/server.c
+    src/server_packet_handle.c
     src/socket.c
     src/temp.c
     src/tick_clock.c

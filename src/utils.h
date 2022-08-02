@@ -6,5 +6,6 @@
 void* emalloc(size_t size);
 void* erealloc(void* ptr, size_t size);
 void die(const char* format, ...);
+void warn(const char* format, ...);
 
 #endif

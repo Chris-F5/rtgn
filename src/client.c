@@ -1,8 +1,13 @@
 #include "rtgn/client.h"
 
 #include "./socket.h"
+#include "./packet.h"
+#include "./utils.h"
 
 #include <sys/socket.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 void rtgn_initClient(
     rtgn_Client* client,
@@ -11,7 +16,16 @@ void rtgn_initClient(
     rtgn_init_game_state_f initGameState,
     rtgn_tick_game_state_f tickGameState)
 {
-    tcpClientSocket_create(srvAddr);
+    client->socket = tcpClientSocket_create(srvAddr);
+
+    size_t packetSize = sizeof(TcpPacket_GreetServer) + strlen("chris") + 1;
+    TcpPacket_GreetServer* greetPacket = emalloc(packetSize);
+    greetPacket->type = TCP_PACKET_TYPE_GREET_SERVER;
+    greetPacket->nameSize = strlen("chris") + 1;
+    strcpy(greetPacket->name, "chris");
+    tcpClientSocket_write(client->socket, packetSize, greetPacket);
+    free(greetPacket);
+
     client->gameState = gameStateMemory;
     client->initGameState = initGameState;
     client->tickGameState = tickGameState;
