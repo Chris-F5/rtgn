@@ -125,7 +125,7 @@ void tcpClientSocket_write(
     if(bytesWritten < 0 && (errno == EAGAIN || errno == EWOULDBLOCK))
         die("write to tcp client socket was blocked");
     if(bytesWritten < 0)
-        die("failed to tcp client socket");
+        die("failed to write to tcp client socket");
     if(bytesWritten != bufferSize)
         die("failed to write full buffer to tcp client socket");
 }
