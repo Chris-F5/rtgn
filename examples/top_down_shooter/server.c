@@ -12,7 +12,7 @@ int main()
     rtgn_initServer(&server, SERVER_PORT, 16);
     
     rtgn_startTickClock(TICK_NANO_DELAY);
-    for(;;) {
+    while(fgetc(stdin) == EOF) {
         if(rtgn_tickClock()) {
             rtgn_tickServer(&server);
         }

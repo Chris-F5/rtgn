@@ -16,5 +16,5 @@ add_custom_target(assets
     )
 add_dependencies(top_down_shooter_client assets)
 
-target_link_libraries(top_down_shooter_client PRIVATE rtgn)
+target_link_libraries(top_down_shooter_client PRIVATE rtgn SDL2)
 target_link_libraries(top_down_shooter_server PRIVATE rtgn)

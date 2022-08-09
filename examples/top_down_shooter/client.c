@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <SDL2/SDL.h>
+
 #include <rtgn/client.h>
 #include <rtgn/tick_clock.h>
 #include <rtgn/common_types.h>
@@ -31,14 +33,39 @@ void tickGameState(GameState* gameState, rtgn_Input* inputs) {
 
 int main()
 {
-    rtgn_networkAddress_t srvAddr;
-    rtgn_Client client;
+    const char* err;
+    if(SDL_Init(SDL_INIT_VIDEO) < 0) {
+        err = SDL_GetError();
+        fprintf(stderr, "failed to init SDL2 '%s'\n", err);
+        exit(1);
+    }
 
+    SDL_Window* window;
+    SDL_Renderer* renderer;
+    window = SDL_CreateWindow(
+        "top down shooter",
+        SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+        500, 500,
+        SDL_WINDOW_SHOWN);
+    if(window == NULL) {
+        err = SDL_GetError();
+        fprintf(stderr, "failed to create SDL2 window '%s'\n", err);
+        exit(1);
+    }
+    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    if(renderer == NULL) {
+        err = SDL_GetError();
+        fprintf(stderr, "failed to create SDL2 renderer '%s'\n", err);
+        exit(1);
+    }
+    
+    rtgn_networkAddress_t srvAddr;
     if(rtgn_networkAddress("127.0.0.1", SERVER_PORT, &srvAddr) < 0) {
         fprintf(stderr, "invalid server address string\n");
         exit(1);
     }
 
+    rtgn_Client client;
     rtgn_initClient(
         &client,
         srvAddr,
@@ -47,8 +74,10 @@ int main()
         (rtgn_tick_game_state_f)tickGameState);
 
     rtgn_startTickClock(TICK_NANO_DELAY);
-    uint32_t i = 0;
-    for(;;) {
+    int quit = 0, i = 0;
+    while(quit == 0) {
+        SDL_Event event;
+        while(SDL_PollEvent(&event)) if (event.type == SDL_QUIT) quit = 1;
         if(rtgn_tickClock()) {
             printf("%d\n", ((GameState*)client.gameState)->number);
             rtgn_Input input = {
@@ -60,6 +89,10 @@ int main()
     }
     
     rtgn_destroyClient(&client);
+
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
 
     return 0;
 }
