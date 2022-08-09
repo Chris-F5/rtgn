@@ -5,6 +5,6 @@
 
 #include "./client_ctx.h"
 
-void handleWindowEvent(ClientCtx* ctx, SDL_Event event);
+void handleWindowEvent(ClientCtx* ctx, SDL_Event* event);
 
 #endif

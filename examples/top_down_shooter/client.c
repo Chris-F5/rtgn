@@ -29,13 +29,10 @@ int main()
     while(clientCtx.quit == 0) {
         SDL_Event event;
         while(SDL_PollEvent(&event))
-            handleWindowEvent(&clientCtx, event);
+            handleWindowEvent(&clientCtx, &event);
         if(rtgn_tickClock()) {
+            rtgn_tickClient(&clientCtx.networkClient, &clientCtx.currentInput);
             printf("%d\n", ((GameState*)clientCtx.networkClient.gameState)->number);
-            rtgn_Input input = {
-                i < 10 ? RTGN_INPUT_FLAG_LEFT : RTGN_INPUT_FLAG_RIGHT
-            };
-            rtgn_tickClient(&clientCtx.networkClient, &input);
             i++;
         }
     }
