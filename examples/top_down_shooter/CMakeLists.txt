@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 add_executable(top_down_shooter_client
     client.c
+    client_ctx.c
+    game_state.c
+    window_event_handler.c
     )
 
 add_executable(top_down_shooter_server
