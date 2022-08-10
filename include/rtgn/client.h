@@ -3,13 +3,20 @@
 
 #include "./common_types.h"
 
+#define RTGN_CLIENT_STATE_NEW 0
+#define RTGN_CLIENT_STATE_CONNECTED 1
+
+typedef uint32_t rtgn_clientState_t;
+
 typedef struct rtgn_Client rtgn_Client;
 struct rtgn_Client
 {
+    rtgn_clientState_t state;
     rtgn_tcpClientSocket_t socket;
     rtgn_game_state_t* gameState;
     rtgn_init_game_state_f initGameState;
     rtgn_tick_game_state_f tickGameState;
+    void* packetBuffer;
 };
 
 void rtgn_initClient(

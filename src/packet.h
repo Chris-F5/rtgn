@@ -27,6 +27,7 @@ struct TcpPacket_GreetServer
     char name[];
 };
 
+typedef struct TcpPacket_GreetClient TcpPacket_GreetClient;
 struct TcpPacket_GreetClient
 {
     tcpPacketType_t type;

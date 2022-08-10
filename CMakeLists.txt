@@ -8,6 +8,7 @@ add_subdirectory(examples/top_down_shooter)
 
 add_library(rtgn STATIC
     src/client.c
+    src/client_packet_handle.c
     src/network_address.c
     src/server.c
     src/server_packet_handle.c

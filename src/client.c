@@ -1,13 +1,30 @@
 #include "rtgn/client.h"
 
+#include "rtgn/config.h"
+
 #include "./socket.h"
 #include "./packet.h"
 #include "./utils.h"
+#include "./client_packet_handle.h"
 
 #include <sys/socket.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+
+static void handlePackets(rtgn_Client* client)
+{
+    ssize_t bytesRead;
+    for(;;) {
+        tcpClientSocket_read(
+            client->socket,
+            RTGN_TCP_CLIENT_PACKET_BUFFER_SIZE,
+            client->packetBuffer,
+            &bytesRead);
+        if(bytesRead <= 0) break;
+        clientHandleTcpPacket(client, bytesRead, (TcpPacket*)client->packetBuffer);
+    }
+}
 
 void rtgn_initClient(
     rtgn_Client* client,
@@ -16,7 +33,10 @@ void rtgn_initClient(
     rtgn_init_game_state_f initGameState,
     rtgn_tick_game_state_f tickGameState)
 {
+    client->state = RTGN_CLIENT_STATE_NEW;
     client->socket = tcpClientSocket_create(srvAddr);
+
+    client->packetBuffer = emalloc(RTGN_TCP_CLIENT_PACKET_BUFFER_SIZE);
 
     size_t packetSize = sizeof(TcpPacket_GreetServer) + strlen("chris") + 1;
     TcpPacket_GreetServer* greetPacket = emalloc(packetSize);
@@ -34,10 +54,12 @@ void rtgn_initClient(
 
 void rtgn_tickClient(rtgn_Client* client, rtgn_Input* input)
 {
+    handlePackets(client);
     client->tickGameState(client->gameState, input);
 }
 
 void rtgn_destroyClient(rtgn_Client* client)
 {
     tcpClientSocket_close(client->socket);
+    free(client->packetBuffer);
 }

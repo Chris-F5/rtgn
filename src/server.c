@@ -41,7 +41,7 @@ static void handleConnectionPackets(rtgn_Server* server)
                 server->packetBuffer,
                 &bytesRead);
             if(bytesRead <= 0) break;
-            handleTcpPacket(
+            serverHandleTcpPacket(
                 server,
                 con,
                 bytesRead,

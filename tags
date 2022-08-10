@@ -1,0 +1,668 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/chris/rtgn/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+$(VERBOSE).SILENT	build/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	build/examples/top_down_shooter/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	build/test/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+$(VERBOSE)MAKESILENT	build/examples/top_down_shooter/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+$(VERBOSE)MAKESILENT	build/test/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+%	build/Makefile	/^% : %,v$/;"	t
+%	build/Makefile	/^% : RCS\/%$/;"	t
+%	build/Makefile	/^% : RCS\/%,v$/;"	t
+%	build/Makefile	/^% : SCCS\/s.%$/;"	t
+%	build/Makefile	/^% : s.%$/;"	t
+%	build/examples/top_down_shooter/Makefile	/^% : %,v$/;"	t
+%	build/examples/top_down_shooter/Makefile	/^% : RCS\/%$/;"	t
+%	build/examples/top_down_shooter/Makefile	/^% : RCS\/%,v$/;"	t
+%	build/examples/top_down_shooter/Makefile	/^% : SCCS\/s.%$/;"	t
+%	build/examples/top_down_shooter/Makefile	/^% : s.%$/;"	t
+%	build/test/Makefile	/^% : %,v$/;"	t
+%	build/test/Makefile	/^% : RCS\/%$/;"	t
+%	build/test/Makefile	/^% : RCS\/%,v$/;"	t
+%	build/test/Makefile	/^% : SCCS\/s.%$/;"	t
+%	build/test/Makefile	/^% : s.%$/;"	t
+ARCHITECTURE_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ASSERT	test/tests/include.h	/^#define ASSERT(/;"	d
+CLIENT_CTX_H	examples/top_down_shooter/client_ctx.h	/^#define CLIENT_CTX_H$/;"	d
+CLOCK	src/tick_clock.c	/^#define CLOCK /;"	d	file:
+CMAKE_AR	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/chris\/rtgn\/build$/;"	m
+CMAKE_BINARY_DIR	build/examples/top_down_shooter/Makefile	/^CMAKE_BINARY_DIR = \/home\/chris\/rtgn\/build$/;"	m
+CMAKE_BINARY_DIR	build/test/Makefile	/^CMAKE_BINARY_DIR = \/home\/chris\/rtgn\/build$/;"	m
+CMAKE_BUILD_TYPE	CMakeLists.txt	/^set(CMAKE_BUILD_TYPE Debug)$/;"	v
+CMAKE_C11_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C17_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C17_COMPILE_FEATURES "c_std_17")$/;"	v
+CMAKE_C23_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C23_COMPILE_FEATURES "c_std_23")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/examples/top_down_shooter/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/test/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMPILER_IS_GNUCC	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
+CMAKE_CROSSCOMPILING	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	build/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	build/examples/top_down_shooter/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	build/test/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX23_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX23_COMPILE_FEATURES "cxx_std_23")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX_ABI_COMPILED	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_BYTE_ORDER	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_COMPILER	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER_ABI	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_AR	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_CXX_COMPILER_ID	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "12.1.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_WORKS	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT "ON")$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/12.1.0;\/usr\/include\/c++\/12./;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/12.1.0;\/usr\/lib/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_PLATFORM_ID	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_SIMULATE_ID	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;m;mm;mpp;CPP;ixx;cppm)$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")$/;"	v
+CMAKE_C_ABI_COMPILED	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_BYTE_ORDER	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_COMPILER	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER_ABI	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_AR	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_ARG1	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_ID	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID_RUN	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_RANLIB	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_VERSION	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "12.1.0")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_WORKS	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WRAPPER	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILE_FEATURES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT "ON")$/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/12.1.0\/include;/;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/12.1.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LINKER_PREFERENCE	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_PLATFORM_ID	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_SIMULATE_ID	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/CMakeFiles/rtgn.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/examples/top_down_shooter/CMakeFiles/assets.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_client.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_server.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/test/CMakeFiles/test.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/test/CMakeFiles/tests.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_GENERATOR	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/CMakeFiles/rtgn.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/examples/top_down_shooter/CMakeFiles/assets.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_client.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_server.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/test/CMakeFiles/test.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/test/CMakeFiles/tests.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/CMakeFiles/rtgn.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/examples/top_down_shooter/CMakeFiles/assets.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_client.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_server.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/test/CMakeFiles/test.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/test/CMakeFiles/tests.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPEND_INFO_FILES	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_FORCE_UNIX_PATHS	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/CMakeFiles/rtgn.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/examples/top_down_shooter/CMakeFiles/assets.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_client.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_server.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/test/CMakeFiles/test.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/test/CMakeFiles/tests.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_HOST_SYSTEM	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.17.9-arch1-1")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.17.9-arch1-1")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_COMPONENT	build/examples/top_down_shooter/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/examples/top_down_shooter/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_COMPONENT	build/test/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/test/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "Debug")$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/examples/top_down_shooter/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "Debug")$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/test/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "Debug")$/;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_PREFIX	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_PREFIX	build/examples/top_down_shooter/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_PREFIX	build/test/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/examples/top_down_shooter/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/test/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LINKER	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_MAKEFILE_DEPENDS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MT	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_OBJDUMP	build/cmake_install.cmake	/^  set(CMAKE_OBJDUMP "\/usr\/bin\/objdump")$/;"	v
+CMAKE_OBJDUMP	build/examples/top_down_shooter/cmake_install.cmake	/^  set(CMAKE_OBJDUMP "\/usr\/bin\/objdump")$/;"	v
+CMAKE_OBJDUMP	build/test/cmake_install.cmake	/^  set(CMAKE_OBJDUMP "\/usr\/bin\/objdump")$/;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/chris\/rtgn\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/chris\/rtgn\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/chris\/rtgn\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/chris\/rtgn")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/examples/top_down_shooter/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/chris\/rtgn")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/test/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/chris\/rtgn")$/;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.23.1/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/chris\/rtgn$/;"	m
+CMAKE_SOURCE_DIR	build/examples/top_down_shooter/Makefile	/^CMAKE_SOURCE_DIR = \/home\/chris\/rtgn$/;"	m
+CMAKE_SOURCE_DIR	build/test/Makefile	/^CMAKE_SOURCE_DIR = \/home\/chris\/rtgn$/;"	m
+CMAKE_SYSTEM	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.17.9-arch1-1")$/;"	v
+CMAKE_SYSTEM_LOADED	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_NAME	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.23.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.17.9-arch1-1")$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/CMakeFiles/rtgn.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/examples/top_down_shooter/CMakeFiles/assets.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_client.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/examples/top_down_shooter/CMakeFiles/top_down_shooter_server.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/test/CMakeFiles/test.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/test/CMakeFiles/tests.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+COMPILER_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CONFIG_H	examples/top_down_shooter/config.h	/^#define CONFIG_H$/;"	d
+CXX_STD	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#      define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
+C_VERSION	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
+C_VERSION	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
+C_VERSION	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
+ClientCtx	examples/top_down_shooter/client_ctx.h	/^struct ClientCtx$/;"	s
+ClientCtx	examples/top_down_shooter/client_ctx.h	/^typedef struct ClientCtx ClientCtx;$/;"	t	typeref:struct:ClientCtx
+DEC	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/examples/top_down_shooter/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/test/Makefile	/^EQUALS = =$/;"	m
+EVENT_HANDLER_PARAMS	examples/top_down_shooter/window_event_handler.c	/^#define EVENT_HANDLER_PARAMS /;"	d	file:
+GAME_STATE_H	examples/top_down_shooter/game_state.h	/^#define GAME_STATE_H$/;"	d
+GameState	examples/top_down_shooter/game_state.h	/^struct GameState$/;"	s
+GameState	examples/top_down_shooter/game_state.h	/^typedef struct GameState GameState;$/;"	t	typeref:struct:GameState
+HANDLER_PARAMS	src/client_packet_handle.c	/^#define HANDLER_PARAMS /;"	d	file:
+HEX	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+ID_VOID_MAIN	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+NANO	src/tick_clock.c	/^#define NANO /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
+RM	build/examples/top_down_shooter/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
+RM	build/test/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
+RTGN_CLIENT_H	include/rtgn/client.h	/^#define RTGN_CLIENT_H$/;"	d
+RTGN_CLIENT_PACKET_HANDLE_H	src/client_packet_handle.h	/^#define RTGN_CLIENT_PACKET_HANDLE_H$/;"	d
+RTGN_CLIENT_STATE_CONNECTED	include/rtgn/client.h	/^#define RTGN_CLIENT_STATE_CONNECTED /;"	d
+RTGN_CLIENT_STATE_NEW	include/rtgn/client.h	/^#define RTGN_CLIENT_STATE_NEW /;"	d
+RTGN_COMMON_TYPES_H	include/rtgn/common_types.h	/^#define RTGN_COMMON_TYPES_H$/;"	d
+RTGN_CONFIG_H	include/rtgn/config.h	/^#define RTGN_CONFIG_H$/;"	d
+RTGN_INPUT_FLAG_LEFT	include/rtgn/common_types.h	/^#define RTGN_INPUT_FLAG_LEFT /;"	d
+RTGN_INPUT_FLAG_RIGHT	include/rtgn/common_types.h	/^#define RTGN_INPUT_FLAG_RIGHT /;"	d
+RTGN_NETWORK_ADDRESS_H	include/rtgn/network_address.h	/^#define RTGN_NETWORK_ADDRESS_H$/;"	d
+RTGN_PACKET_H	src/packet.h	/^#define RTGN_PACKET_H$/;"	d
+RTGN_SERVER_H	include/rtgn/server.h	/^#define RTGN_SERVER_H$/;"	d
+RTGN_SERVER_PACKET_HANDLE_H	src/server_packet_handle.h	/^#define RTGN_SERVER_PACKET_HANDLE_H$/;"	d
+RTGN_SOCKET_H	src/socket.h	/^#define RTGN_SOCKET_H$/;"	d
+RTGN_SRV_CON_STATE_IDLE	include/rtgn/server.h	/^#define RTGN_SRV_CON_STATE_IDLE /;"	d
+RTGN_SRV_CON_STATE_NEW	include/rtgn/server.h	/^#define RTGN_SRV_CON_STATE_NEW /;"	d
+RTGN_SRV_CON_STATE_NO_CONNECTION	include/rtgn/server.h	/^#define RTGN_SRV_CON_STATE_NO_CONNECTION /;"	d
+RTGN_TCP_SERVER_PACKET_BUFFER_SIZE	include/rtgn/config.h	/^#define RTGN_TCP_SERVER_PACKET_BUFFER_SIZE /;"	d
+RTGN_TCP_SERVER_QUEUE_REQUESTS	include/rtgn/config.h	/^#define RTGN_TCP_SERVER_QUEUE_REQUESTS /;"	d
+RTGN_TEMP_H	include/rtgn/temp.h	/^#define RTGN_TEMP_H$/;"	d
+RTGN_TICK_CLOCK_H	include/rtgn/tick_clock.h	/^#define RTGN_TICK_CLOCK_H$/;"	d
+RTGN_UTILS_H	src/utils.h	/^#define RTGN_UTILS_H$/;"	d
+SERVER_PORT	examples/top_down_shooter/config.h	/^#define SERVER_PORT /;"	d
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/examples/top_down_shooter/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/test/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+STRINGIFY	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+TCP_PACKET_HANDLE_PARAMS	src/server_packet_handle.c	/^#define TCP_PACKET_HANDLE_PARAMS /;"	d	file:
+TCP_PACKET_TYPE_GREET_CLIENT	src/packet.h	/^#define TCP_PACKET_TYPE_GREET_CLIENT /;"	d
+TCP_PACKET_TYPE_GREET_SERVER	src/packet.h	/^#define TCP_PACKET_TYPE_GREET_SERVER /;"	d
+TESTS	test/runner.c	/^#define TESTS /;"	d	file:
+TEST_DEFINE	test/runner.c	/^#define TEST_DEFINE(/;"	d	file:
+TEST_ENTRY	test/runner.c	/^#define TEST_ENTRY(/;"	d	file:
+TEST_LIST	test/tests.h	/^#define TEST_LIST(/;"	d
+TICK_NANO_DELAY	examples/top_down_shooter/config.h	/^#define TICK_NANO_DELAY /;"	d
+TcpPacket	src/packet.h	/^struct TcpPacket$/;"	s
+TcpPacket	src/packet.h	/^typedef struct TcpPacket TcpPacket;$/;"	t	typeref:struct:TcpPacket
+TcpPacket_GreetClient	src/packet.h	/^struct TcpPacket_GreetClient$/;"	s
+TcpPacket_GreetClient	src/packet.h	/^typedef struct TcpPacket_GreetClient TcpPacket_GreetClient;$/;"	t	typeref:struct:TcpPacket_GreetClient
+TcpPacket_GreetServer	src/packet.h	/^struct TcpPacket_GreetServer$/;"	s
+TcpPacket_GreetServer	src/packet.h	/^typedef struct TcpPacket_GreetServer TcpPacket_GreetServer;$/;"	t	typeref:struct:TcpPacket_GreetServer
+TestEntry	test/runner.c	/^struct TestEntry {$/;"	s	file:
+TestEntry	test/runner.c	/^typedef struct TestEntry TestEntry;$/;"	t	typeref:struct:TestEntry	file:
+WINDOW_EVENT_HANDLER_H	examples/top_down_shooter/window_event_handler.h	/^#define WINDOW_EVENT_HANDLER_H$/;"	d
+__has_include	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
+__has_include	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
+acceptNewConnections	src/server.c	/^static void acceptNewConnections(rtgn_Server* server)$/;"	f	typeref:typename:void	file:
+all	build/Makefile	/^all: cmake_check_build_system$/;"	t
+all	build/examples/top_down_shooter/Makefile	/^all: cmake_check_build_system$/;"	t
+all	build/test/Makefile	/^all: cmake_check_build_system$/;"	t
+assets	build/Makefile	/^assets: cmake_check_build_system$/;"	t
+assets	build/examples/top_down_shooter/Makefile	/^assets: examples\/top_down_shooter\/CMakeFiles\/assets.dir\/rule$/;"	t
+assets	examples/top_down_shooter/CMakeLists.txt	/^add_custom_target(assets$/;"	t
+assets/fast	build/Makefile	/^assets\/fast:$/;"	t
+assets/fast	build/examples/top_down_shooter/Makefile	/^assets\/fast:$/;"	t
+clean	build/Makefile	/^clean:$/;"	t
+clean	build/examples/top_down_shooter/Makefile	/^clean:$/;"	t
+clean	build/test/Makefile	/^clean:$/;"	t
+clean/fast	build/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	build/examples/top_down_shooter/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	build/test/Makefile	/^clean\/fast: clean$/;"	t
+client.c.i	build/examples/top_down_shooter/Makefile	/^client.c.i:$/;"	t
+client.c.o	build/examples/top_down_shooter/Makefile	/^client.c.o:$/;"	t
+client.c.s	build/examples/top_down_shooter/Makefile	/^client.c.s:$/;"	t
+client.i	build/examples/top_down_shooter/Makefile	/^client.i: client.c.i$/;"	t
+client.o	build/examples/top_down_shooter/Makefile	/^client.o: client.c.o$/;"	t
+client.s	build/examples/top_down_shooter/Makefile	/^client.s: client.c.s$/;"	t
+client_ctx.c.i	build/examples/top_down_shooter/Makefile	/^client_ctx.c.i:$/;"	t
+client_ctx.c.o	build/examples/top_down_shooter/Makefile	/^client_ctx.c.o:$/;"	t
+client_ctx.c.s	build/examples/top_down_shooter/Makefile	/^client_ctx.c.s:$/;"	t
+client_ctx.i	build/examples/top_down_shooter/Makefile	/^client_ctx.i: client_ctx.c.i$/;"	t
+client_ctx.o	build/examples/top_down_shooter/Makefile	/^client_ctx.o: client_ctx.c.o$/;"	t
+client_ctx.s	build/examples/top_down_shooter/Makefile	/^client_ctx.s: client_ctx.c.s$/;"	t
+cmake_check_build_system	build/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	build/examples/top_down_shooter/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	build/test/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	build/Makefile	/^cmake_force:$/;"	t
+cmake_force	build/examples/top_down_shooter/Makefile	/^cmake_force:$/;"	t
+cmake_force	build/test/Makefile	/^cmake_force:$/;"	t
+connections	include/rtgn/server.h	/^    rtgn_SrvCon* connections;$/;"	m	struct:rtgn_Server	typeref:typename:rtgn_SrvCon *
+const	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+currentInput	examples/top_down_shooter/client_ctx.h	/^    rtgn_Input currentInput;$/;"	m	struct:ClientCtx	typeref:typename:rtgn_Input
+data	src/packet.h	/^    char data[];$/;"	m	struct:TcpPacket	typeref:typename:char[]
+default_target	build/Makefile	/^default_target: all$/;"	t
+default_target	build/examples/top_down_shooter/Makefile	/^default_target: all$/;"	t
+default_target	build/test/Makefile	/^default_target: all$/;"	t
+depend	build/Makefile	/^depend:$/;"	t
+depend	build/examples/top_down_shooter/Makefile	/^depend:$/;"	t
+depend	build/test/Makefile	/^depend:$/;"	t
+destroyClientCtx	examples/top_down_shooter/client_ctx.c	/^void destroyClientCtx(ClientCtx* ctx)$/;"	f	typeref:typename:void
+die	src/utils.c	/^void die(const char* format, ...)$/;"	f	typeref:typename:void
+edit_cache	build/Makefile	/^edit_cache:$/;"	t
+edit_cache	build/examples/top_down_shooter/Makefile	/^edit_cache:$/;"	t
+edit_cache	build/test/Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	build/examples/top_down_shooter/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	build/test/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+emalloc	src/utils.c	/^void* emalloc(size_t size)$/;"	f	typeref:typename:void *
+erealloc	src/utils.c	/^void* erealloc(void* ptr, size_t size)$/;"	f	typeref:typename:void *
+examples/top_down_shooter/CMakeFiles/assets.dir/rule	build/examples/top_down_shooter/Makefile	/^examples\/top_down_shooter\/CMakeFiles\/assets.dir\/rule:$/;"	t
+examples/top_down_shooter/CMakeFiles/top_down_shooter_client.dir/rule	build/examples/top_down_shooter/Makefile	/^examples\/top_down_shooter\/CMakeFiles\/top_down_shooter_client.dir\/rule:$/;"	t
+examples/top_down_shooter/CMakeFiles/top_down_shooter_server.dir/rule	build/examples/top_down_shooter/Makefile	/^examples\/top_down_shooter\/CMakeFiles\/top_down_shooter_server.dir\/rule:$/;"	t
+function	test/runner.c	/^    int (*function)(void);$/;"	m	struct:TestEntry	typeref:typename:int (*)(void)	file:
+gameState	include/rtgn/client.h	/^    rtgn_game_state_t* gameState;$/;"	m	struct:rtgn_Client	typeref:typename:rtgn_game_state_t *
+game_state.c.i	build/examples/top_down_shooter/Makefile	/^game_state.c.i:$/;"	t
+game_state.c.o	build/examples/top_down_shooter/Makefile	/^game_state.c.o:$/;"	t
+game_state.c.s	build/examples/top_down_shooter/Makefile	/^game_state.c.s:$/;"	t
+game_state.i	build/examples/top_down_shooter/Makefile	/^game_state.i: game_state.c.i$/;"	t
+game_state.o	build/examples/top_down_shooter/Makefile	/^game_state.o: game_state.c.o$/;"	t
+game_state.s	build/examples/top_down_shooter/Makefile	/^game_state.s: game_state.c.s$/;"	t
+handleConnectionPackets	src/server.c	/^static void handleConnectionPackets(rtgn_Server* server)$/;"	f	typeref:typename:void	file:
+handleGreet	src/server_packet_handle.c	/^void handleGreet(TCP_PACKET_HANDLE_PARAMS)$/;"	f	typeref:typename:void
+handleGreetClient	src/client_packet_handle.c	/^void handleGreetClient(HANDLER_PARAMS)$/;"	f	typeref:typename:void
+handleTcpPacket	src/client_packet_handle.c	/^void handleTcpPacket(rtgn_Client* client, size_t packetSize, TcpPacket* packet)$/;"	f	typeref:typename:void
+handleTcpPacket	src/server_packet_handle.c	/^void handleTcpPacket($/;"	f	typeref:typename:void
+handleWindowEvent	examples/top_down_shooter/window_event_handler.c	/^void handleWindowEvent(ClientCtx* ctx, SDL_Event* event)$/;"	f	typeref:typename:void
+handlers	examples/top_down_shooter/window_event_handler.c	/^void (*handlers[])(EVENT_HANDLER_PARAMS) = {$/;"	v	typeref:typename:void (* [])(EVENT_HANDLER_PARAMS)
+help	build/Makefile	/^help:$/;"	t
+help	build/examples/top_down_shooter/Makefile	/^help:$/;"	t
+help	build/test/Makefile	/^help:$/;"	t
+info_arch	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_extensions_default	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v	typeref:typename:const char *
+info_language_extensions_default	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v	typeref:typename:const char *
+info_language_standard_default	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_standard_default =$/;"	v	typeref:typename:const char *
+info_language_standard_default	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_standard_default = "INFO" ":" "standard_default["$/;"	v	typeref:typename:const char *
+info_platform	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v	typeref:typename:char const *
+info_version	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v	typeref:typename:char const *
+info_version_internal	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
+info_version_internal	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
+initClientCtx	examples/top_down_shooter/client_ctx.c	/^void initClientCtx(ClientCtx* ctx)$/;"	f	typeref:typename:void
+initGameState	examples/top_down_shooter/game_state.c	/^void initGameState(GameState* gameState, int playerCount) {$/;"	f	typeref:typename:void
+initGameState	include/rtgn/client.h	/^    rtgn_init_game_state_f initGameState;$/;"	m	struct:rtgn_Client	typeref:typename:rtgn_init_game_state_f
+inputFlags	include/rtgn/common_types.h	/^    uint32_t inputFlags;$/;"	m	struct:rtgn_Input	typeref:typename:uint32_t
+keyDownHandler	examples/top_down_shooter/window_event_handler.c	/^void keyDownHandler(EVENT_HANDLER_PARAMS)$/;"	f	typeref:typename:void
+keyUpHandler	examples/top_down_shooter/window_event_handler.c	/^void keyUpHandler(EVENT_HANDLER_PARAMS)$/;"	f	typeref:typename:void
+main	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	examples/top_down_shooter/client.c	/^int main()$/;"	f	typeref:typename:int
+main	examples/top_down_shooter/server.c	/^int main()$/;"	f	typeref:typename:int
+main	test/runner.c	/^int main()$/;"	f	typeref:typename:int
+maxConnections	include/rtgn/server.h	/^    int maxConnections;$/;"	m	struct:rtgn_Server	typeref:typename:int
+name	src/packet.h	/^    char name[];$/;"	m	struct:TcpPacket_GreetServer	typeref:typename:char[]
+name	test/runner.c	/^    const char* name;$/;"	m	struct:TestEntry	typeref:typename:const char *	file:
+nameSize	src/packet.h	/^    uint8_t nameSize;$/;"	m	struct:TcpPacket_GreetServer	typeref:typename:uint8_t
+nanoDelay	src/tick_clock.c	/^static unsigned int nanoDelay;$/;"	v	typeref:typename:unsigned int	file:
+networkClient	examples/top_down_shooter/client_ctx.h	/^    rtgn_Client networkClient;$/;"	m	struct:ClientCtx	typeref:typename:rtgn_Client
+next	src/tick_clock.c	/^static struct timespec next;$/;"	v	typeref:struct:timespec	file:
+number	examples/top_down_shooter/game_state.h	/^    int number;$/;"	m	struct:GameState	typeref:typename:int
+number	src/packet.h	/^    uint32_t number;$/;"	m	struct:TcpPacket_GreetClient	typeref:typename:uint32_t
+packetBuffer	include/rtgn/server.h	/^    void* packetBuffer;$/;"	m	struct:rtgn_Server	typeref:typename:void *
+playerCount	examples/top_down_shooter/game_state.h	/^    int playerCount;$/;"	m	struct:GameState	typeref:typename:int
+port	include/rtgn/server.h	/^    int port;$/;"	m	struct:rtgn_Server	typeref:typename:int
+preinstall	build/Makefile	/^preinstall: all$/;"	t
+preinstall	build/examples/top_down_shooter/Makefile	/^preinstall: all$/;"	t
+preinstall	build/test/Makefile	/^preinstall: all$/;"	t
+preinstall/fast	build/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	build/examples/top_down_shooter/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	build/test/Makefile	/^preinstall\/fast:$/;"	t
+qnxnto	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	build/CMakeFiles/3.23.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+quit	examples/top_down_shooter/client_ctx.h	/^    int quit;$/;"	m	struct:ClientCtx	typeref:typename:int
+quitHandler	examples/top_down_shooter/window_event_handler.c	/^void quitHandler(EVENT_HANDLER_PARAMS)$/;"	f	typeref:typename:void
+rebuild_cache	build/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	build/examples/top_down_shooter/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	build/test/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	build/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	build/examples/top_down_shooter/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	build/test/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+renderer	examples/top_down_shooter/client_ctx.h	/^    SDL_Renderer* renderer;$/;"	m	struct:ClientCtx	typeref:typename:SDL_Renderer *
+rtgn	CMakeLists.txt	/^add_library(rtgn STATIC$/;"	t
+rtgn	CMakeLists.txt	/^project(rtgn)$/;"	p
+rtgn	build/Makefile	/^rtgn: cmake_check_build_system$/;"	t
+rtgn/fast	build/Makefile	/^rtgn\/fast:$/;"	t
+rtgn_Client	include/rtgn/client.h	/^struct rtgn_Client$/;"	s
+rtgn_Client	include/rtgn/client.h	/^typedef struct rtgn_Client rtgn_Client;$/;"	t	typeref:struct:rtgn_Client
+rtgn_Input	include/rtgn/common_types.h	/^struct rtgn_Input$/;"	s
+rtgn_Input	include/rtgn/common_types.h	/^typedef struct rtgn_Input rtgn_Input;$/;"	t	typeref:struct:rtgn_Input
+rtgn_Server	include/rtgn/server.h	/^struct rtgn_Server$/;"	s
+rtgn_Server	include/rtgn/server.h	/^typedef struct rtgn_Server rtgn_Server;$/;"	t	typeref:struct:rtgn_Server
+rtgn_SrvCon	include/rtgn/server.h	/^struct rtgn_SrvCon$/;"	s
+rtgn_SrvCon	include/rtgn/server.h	/^typedef struct rtgn_SrvCon rtgn_SrvCon;$/;"	t	typeref:struct:rtgn_SrvCon
+rtgn_add	src/temp.c	/^int rtgn_add(int a, int b)$/;"	f	typeref:typename:int
+rtgn_clientState_t	include/rtgn/client.h	/^typedef uint32_t rtgn_clientState_t;$/;"	t	typeref:typename:uint32_t
+rtgn_destroyClient	src/client.c	/^void rtgn_destroyClient(rtgn_Client* client)$/;"	f	typeref:typename:void
+rtgn_destroyServer	src/server.c	/^void rtgn_destroyServer(rtgn_Server* server)$/;"	f	typeref:typename:void
+rtgn_game_state_t	include/rtgn/common_types.h	/^typedef void rtgn_game_state_t;$/;"	t	typeref:typename:void
+rtgn_initClient	src/client.c	/^void rtgn_initClient($/;"	f	typeref:typename:void
+rtgn_initServer	src/server.c	/^void rtgn_initServer(rtgn_Server* server, int port, int maxConnections)$/;"	f	typeref:typename:void
+rtgn_init_game_state_f	include/rtgn/common_types.h	/^typedef void (*rtgn_init_game_state_f)(rtgn_game_state_t* gameState, int playerCount);$/;"	t	typeref:typename:void (*)(rtgn_game_state_t * gameState,int playerCount)
+rtgn_networkAddress	src/network_address.c	/^int rtgn_networkAddress($/;"	f	typeref:typename:int
+rtgn_networkAddress_t	include/rtgn/common_types.h	/^typedef struct sockaddr_in rtgn_networkAddress_t;$/;"	t	typeref:struct:sockaddr_in
+rtgn_srvConIndex_t	include/rtgn/common_types.h	/^typedef uint16_t rtgn_srvConIndex_t;$/;"	t	typeref:typename:uint16_t
+rtgn_srvConState_t	include/rtgn/server.h	/^typedef uint32_t rtgn_srvConState_t;$/;"	t	typeref:typename:uint32_t
+rtgn_startTickClock	src/tick_clock.c	/^void rtgn_startTickClock(unsigned int nanosecondDelay)$/;"	f	typeref:typename:void
+rtgn_tcpClientSocket_t	include/rtgn/common_types.h	/^typedef int rtgn_tcpClientSocket_t;$/;"	t	typeref:typename:int
+rtgn_tcpSrvConSocket_t	include/rtgn/common_types.h	/^typedef int rtgn_tcpSrvConSocket_t;$/;"	t	typeref:typename:int
+rtgn_tcpSrvSocket_t	include/rtgn/common_types.h	/^typedef int rtgn_tcpSrvSocket_t;$/;"	t	typeref:typename:int
+rtgn_tickClient	src/client.c	/^void rtgn_tickClient(rtgn_Client* client, rtgn_Input* input)$/;"	f	typeref:typename:void
+rtgn_tickClock	src/tick_clock.c	/^int rtgn_tickClock()$/;"	f	typeref:typename:int
+rtgn_tickServer	src/server.c	/^void rtgn_tickServer(rtgn_Server* server)$/;"	f	typeref:typename:void
+rtgn_tick_game_state_f	include/rtgn/common_types.h	/^typedef void (*rtgn_tick_game_state_f)(rtgn_game_state_t* gameState, rtgn_Input* playerInputs);$/;"	t	typeref:typename:void (*)(rtgn_game_state_t * gameState,rtgn_Input * playerInputs)
+runner.c.i	build/test/Makefile	/^runner.c.i:$/;"	t
+runner.c.o	build/test/Makefile	/^runner.c.o:$/;"	t
+runner.c.s	build/test/Makefile	/^runner.c.s:$/;"	t
+runner.i	build/test/Makefile	/^runner.i: runner.c.i$/;"	t
+runner.o	build/test/Makefile	/^runner.o: runner.c.o$/;"	t
+runner.s	build/test/Makefile	/^runner.s: runner.c.s$/;"	t
+server.c.i	build/examples/top_down_shooter/Makefile	/^server.c.i:$/;"	t
+server.c.o	build/examples/top_down_shooter/Makefile	/^server.c.o:$/;"	t
+server.c.s	build/examples/top_down_shooter/Makefile	/^server.c.s:$/;"	t
+server.i	build/examples/top_down_shooter/Makefile	/^server.i: server.c.i$/;"	t
+server.o	build/examples/top_down_shooter/Makefile	/^server.o: server.c.o$/;"	t
+server.s	build/examples/top_down_shooter/Makefile	/^server.s: server.c.s$/;"	t
+socket	include/rtgn/client.h	/^    rtgn_tcpClientSocket_t socket;$/;"	m	struct:rtgn_Client	typeref:typename:rtgn_tcpClientSocket_t
+socket	include/rtgn/server.h	/^    rtgn_tcpSrvConSocket_t socket;$/;"	m	struct:rtgn_SrvCon	typeref:typename:rtgn_tcpSrvConSocket_t
+src/client.c.i	build/Makefile	/^src\/client.c.i:$/;"	t
+src/client.c.o	build/Makefile	/^src\/client.c.o:$/;"	t
+src/client.c.s	build/Makefile	/^src\/client.c.s:$/;"	t
+src/client.i	build/Makefile	/^src\/client.i: src\/client.c.i$/;"	t
+src/client.o	build/Makefile	/^src\/client.o: src\/client.c.o$/;"	t
+src/client.s	build/Makefile	/^src\/client.s: src\/client.c.s$/;"	t
+src/network_address.c.i	build/Makefile	/^src\/network_address.c.i:$/;"	t
+src/network_address.c.o	build/Makefile	/^src\/network_address.c.o:$/;"	t
+src/network_address.c.s	build/Makefile	/^src\/network_address.c.s:$/;"	t
+src/network_address.i	build/Makefile	/^src\/network_address.i: src\/network_address.c.i$/;"	t
+src/network_address.o	build/Makefile	/^src\/network_address.o: src\/network_address.c.o$/;"	t
+src/network_address.s	build/Makefile	/^src\/network_address.s: src\/network_address.c.s$/;"	t
+src/server.c.i	build/Makefile	/^src\/server.c.i:$/;"	t
+src/server.c.o	build/Makefile	/^src\/server.c.o:$/;"	t
+src/server.c.s	build/Makefile	/^src\/server.c.s:$/;"	t
+src/server.i	build/Makefile	/^src\/server.i: src\/server.c.i$/;"	t
+src/server.o	build/Makefile	/^src\/server.o: src\/server.c.o$/;"	t
+src/server.s	build/Makefile	/^src\/server.s: src\/server.c.s$/;"	t
+src/server_packet_handle.c.i	build/Makefile	/^src\/server_packet_handle.c.i:$/;"	t
+src/server_packet_handle.c.o	build/Makefile	/^src\/server_packet_handle.c.o:$/;"	t
+src/server_packet_handle.c.s	build/Makefile	/^src\/server_packet_handle.c.s:$/;"	t
+src/server_packet_handle.i	build/Makefile	/^src\/server_packet_handle.i: src\/server_packet_handle.c.i$/;"	t
+src/server_packet_handle.o	build/Makefile	/^src\/server_packet_handle.o: src\/server_packet_handle.c.o$/;"	t
+src/server_packet_handle.s	build/Makefile	/^src\/server_packet_handle.s: src\/server_packet_handle.c.s$/;"	t
+src/socket.c.i	build/Makefile	/^src\/socket.c.i:$/;"	t
+src/socket.c.o	build/Makefile	/^src\/socket.c.o:$/;"	t
+src/socket.c.s	build/Makefile	/^src\/socket.c.s:$/;"	t
+src/socket.i	build/Makefile	/^src\/socket.i: src\/socket.c.i$/;"	t
+src/socket.o	build/Makefile	/^src\/socket.o: src\/socket.c.o$/;"	t
+src/socket.s	build/Makefile	/^src\/socket.s: src\/socket.c.s$/;"	t
+src/temp.c.i	build/Makefile	/^src\/temp.c.i:$/;"	t
+src/temp.c.o	build/Makefile	/^src\/temp.c.o:$/;"	t
+src/temp.c.s	build/Makefile	/^src\/temp.c.s:$/;"	t
+src/temp.i	build/Makefile	/^src\/temp.i: src\/temp.c.i$/;"	t
+src/temp.o	build/Makefile	/^src\/temp.o: src\/temp.c.o$/;"	t
+src/temp.s	build/Makefile	/^src\/temp.s: src\/temp.c.s$/;"	t
+src/tick_clock.c.i	build/Makefile	/^src\/tick_clock.c.i:$/;"	t
+src/tick_clock.c.o	build/Makefile	/^src\/tick_clock.c.o:$/;"	t
+src/tick_clock.c.s	build/Makefile	/^src\/tick_clock.c.s:$/;"	t
+src/tick_clock.i	build/Makefile	/^src\/tick_clock.i: src\/tick_clock.c.i$/;"	t
+src/tick_clock.o	build/Makefile	/^src\/tick_clock.o: src\/tick_clock.c.o$/;"	t
+src/tick_clock.s	build/Makefile	/^src\/tick_clock.s: src\/tick_clock.c.s$/;"	t
+src/utils.c.i	build/Makefile	/^src\/utils.c.i:$/;"	t
+src/utils.c.o	build/Makefile	/^src\/utils.c.o:$/;"	t
+src/utils.c.s	build/Makefile	/^src\/utils.c.s:$/;"	t
+src/utils.i	build/Makefile	/^src\/utils.i: src\/utils.c.i$/;"	t
+src/utils.o	build/Makefile	/^src\/utils.o: src\/utils.c.o$/;"	t
+src/utils.s	build/Makefile	/^src\/utils.s: src\/utils.c.s$/;"	t
+srvAddr	examples/top_down_shooter/client_ctx.h	/^    rtgn_networkAddress_t srvAddr;$/;"	m	struct:ClientCtx	typeref:typename:rtgn_networkAddress_t
+srvSocket	include/rtgn/server.h	/^    rtgn_tcpSrvSocket_t srvSocket;$/;"	m	struct:rtgn_Server	typeref:typename:rtgn_tcpSrvSocket_t
+state	include/rtgn/client.h	/^    rtgn_clientState_t state;$/;"	m	struct:rtgn_Client	typeref:typename:rtgn_clientState_t
+state	include/rtgn/server.h	/^    rtgn_srvConState_t state;$/;"	m	struct:rtgn_SrvCon	typeref:typename:rtgn_srvConState_t
+tcpClientSocket_close	src/socket.c	/^void tcpClientSocket_close(rtgn_tcpClientSocket_t sock)$/;"	f	typeref:typename:void
+tcpClientSocket_create	src/socket.c	/^rtgn_tcpClientSocket_t tcpClientSocket_create(rtgn_networkAddress_t srvAddr)$/;"	f	typeref:typename:rtgn_tcpClientSocket_t
+tcpClientSocket_read	src/socket.c	/^void tcpClientSocket_read($/;"	f	typeref:typename:void
+tcpClientSocket_write	src/socket.c	/^void tcpClientSocket_write($/;"	f	typeref:typename:void
+tcpHandlers	src/client_packet_handle.c	/^void (*tcpHandlers[])(HANDLER_PARAMS) = {$/;"	v	typeref:typename:void (* [])(HANDLER_PARAMS)
+tcpPacketHandlers	src/server_packet_handle.c	/^void (*tcpPacketHandlers[])(TCP_PACKET_HANDLE_PARAMS) = {$/;"	v	typeref:typename:void (* [])(TCP_PACKET_HANDLE_PARAMS)
+tcpPacketType_t	src/packet.h	/^typedef uint8_t tcpPacketType_t;$/;"	t	typeref:typename:uint8_t
+tcpSrvConSocket_close	src/socket.c	/^void tcpSrvConSocket_close(rtgn_tcpSrvConSocket_t sock)$/;"	f	typeref:typename:void
+tcpSrvConSocket_read	src/socket.c	/^void tcpSrvConSocket_read($/;"	f	typeref:typename:void
+tcpSrvConSocket_write	src/socket.c	/^void tcpSrvConSocket_write($/;"	f	typeref:typename:void
+tcpSrvSocket_accept	src/socket.c	/^int tcpSrvSocket_accept($/;"	f	typeref:typename:int
+tcpSrvSocket_close	src/socket.c	/^void tcpSrvSocket_close(rtgn_tcpSrvSocket_t sock)$/;"	f	typeref:typename:void
+tcpSrvSocket_create	src/socket.c	/^rtgn_tcpSrvSocket_t tcpSrvSocket_create(int port)$/;"	f	typeref:typename:rtgn_tcpSrvSocket_t
+test	build/Makefile	/^test: cmake_check_build_system$/;"	t
+test	build/test/Makefile	/^test: test\/CMakeFiles\/test.dir\/rule$/;"	t
+test	test/CMakeLists.txt	/^add_custom_target(test COMMAND tests DEPENDS tests)$/;"	t
+test/CMakeFiles/test.dir/rule	build/test/Makefile	/^test\/CMakeFiles\/test.dir\/rule:$/;"	t
+test/CMakeFiles/tests.dir/rule	build/test/Makefile	/^test\/CMakeFiles\/tests.dir\/rule:$/;"	t
+test/fast	build/Makefile	/^test\/fast:$/;"	t
+test/fast	build/test/Makefile	/^test\/fast:$/;"	t
+testCount	test/runner.c	/^long testCount =  sizeof(tests) \/ sizeof(tests[0]);$/;"	v	typeref:typename:long
+test_temp	test/tests/test_temp.c	/^int test_temp(void)$/;"	f	typeref:typename:int
+tests	build/Makefile	/^tests: cmake_check_build_system$/;"	t
+tests	build/test/Makefile	/^tests: test\/CMakeFiles\/tests.dir\/rule$/;"	t
+tests	test/CMakeLists.txt	/^add_executable(tests$/;"	t
+tests/fast	build/Makefile	/^tests\/fast:$/;"	t
+tests/fast	build/test/Makefile	/^tests\/fast:$/;"	t
+tests/test_temp.c.i	build/test/Makefile	/^tests\/test_temp.c.i:$/;"	t
+tests/test_temp.c.o	build/test/Makefile	/^tests\/test_temp.c.o:$/;"	t
+tests/test_temp.c.s	build/test/Makefile	/^tests\/test_temp.c.s:$/;"	t
+tests/test_temp.i	build/test/Makefile	/^tests\/test_temp.i: tests\/test_temp.c.i$/;"	t
+tests/test_temp.o	build/test/Makefile	/^tests\/test_temp.o: tests\/test_temp.c.o$/;"	t
+tests/test_temp.s	build/test/Makefile	/^tests\/test_temp.s: tests\/test_temp.c.s$/;"	t
+tickGameState	examples/top_down_shooter/game_state.c	/^void tickGameState(GameState* gameState, rtgn_Input* inputs) {$/;"	f	typeref:typename:void
+tickGameState	include/rtgn/client.h	/^    rtgn_tick_game_state_f tickGameState;$/;"	m	struct:rtgn_Client	typeref:typename:rtgn_tick_game_state_f
+top_down_shooter_client	build/Makefile	/^top_down_shooter_client: cmake_check_build_system$/;"	t
+top_down_shooter_client	build/examples/top_down_shooter/Makefile	/^top_down_shooter_client: examples\/top_down_shooter\/CMakeFiles\/top_down_shooter_client.dir\/ru/;"	t
+top_down_shooter_client	examples/top_down_shooter/CMakeLists.txt	/^add_executable(top_down_shooter_client$/;"	t
+top_down_shooter_client/fast	build/Makefile	/^top_down_shooter_client\/fast:$/;"	t
+top_down_shooter_client/fast	build/examples/top_down_shooter/Makefile	/^top_down_shooter_client\/fast:$/;"	t
+top_down_shooter_server	build/Makefile	/^top_down_shooter_server: cmake_check_build_system$/;"	t
+top_down_shooter_server	build/examples/top_down_shooter/Makefile	/^top_down_shooter_server: examples\/top_down_shooter\/CMakeFiles\/top_down_shooter_server.dir\/ru/;"	t
+top_down_shooter_server	examples/top_down_shooter/CMakeLists.txt	/^add_executable(top_down_shooter_server$/;"	t
+top_down_shooter_server/fast	build/Makefile	/^top_down_shooter_server\/fast:$/;"	t
+top_down_shooter_server/fast	build/examples/top_down_shooter/Makefile	/^top_down_shooter_server\/fast:$/;"	t
+type	src/packet.h	/^    tcpPacketType_t type;$/;"	m	struct:TcpPacket	typeref:typename:tcpPacketType_t
+type	src/packet.h	/^    tcpPacketType_t type;$/;"	m	struct:TcpPacket_GreetClient	typeref:typename:tcpPacketType_t
+type	src/packet.h	/^    tcpPacketType_t type;$/;"	m	struct:TcpPacket_GreetServer	typeref:typename:tcpPacketType_t
+volatile	build/CMakeFiles/3.23.1/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+warn	src/utils.c	/^void warn(const char* format, ...)$/;"	f	typeref:typename:void
+window	examples/top_down_shooter/client_ctx.h	/^    SDL_Window* window;$/;"	m	struct:ClientCtx	typeref:typename:SDL_Window *
+window_event_handler.c.i	build/examples/top_down_shooter/Makefile	/^window_event_handler.c.i:$/;"	t
+window_event_handler.c.o	build/examples/top_down_shooter/Makefile	/^window_event_handler.c.o:$/;"	t
+window_event_handler.c.s	build/examples/top_down_shooter/Makefile	/^window_event_handler.c.s:$/;"	t
+window_event_handler.i	build/examples/top_down_shooter/Makefile	/^window_event_handler.i: window_event_handler.c.i$/;"	t
+window_event_handler.o	build/examples/top_down_shooter/Makefile	/^window_event_handler.o: window_event_handler.c.o$/;"	t
+window_event_handler.s	build/examples/top_down_shooter/Makefile	/^window_event_handler.s: window_event_handler.c.s$/;"	t

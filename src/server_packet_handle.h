@@ -6,7 +6,7 @@
 
 #include "./packet.h"
 
-void handleTcpPacket(
+void serverHandleTcpPacket(
     rtgn_Server* server,
     rtgn_srvConIndex_t conIndex,
     size_t packetSize,

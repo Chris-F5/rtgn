@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include "./utils.h"
+#include "./socket.h"
 
 #define TCP_PACKET_HANDLE_PARAMS \
     rtgn_Server* server, \
@@ -25,13 +26,22 @@ void handleGreet(TCP_PACKET_HANDLE_PARAMS)
     }
     greet->name[greet->nameSize - 1] = 0;
     printf("'%s' greeted the server!\n", greet->name);
+
+    TcpPacket_GreetClient res;
+    res.type = TCP_PACKET_TYPE_GREET_CLIENT;
+    res.number = 42;
+
+    tcpSrvConSocket_write(
+        server->connections[conIndex].socket,
+        sizeof(res),
+        &res);
 }
 
 void (*tcpPacketHandlers[])(TCP_PACKET_HANDLE_PARAMS) = {
     [TCP_PACKET_TYPE_GREET_SERVER] = handleGreet,
 };
 
-void handleTcpPacket(
+void serverHandleTcpPacket(
     rtgn_Server* server,
     rtgn_srvConIndex_t conIndex,
     size_t packetSize,
