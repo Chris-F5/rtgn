@@ -12,4 +12,9 @@ void serverHandleTcpPacket(
     size_t packetSize,
     TcpPacket* packet);
 
+void serverHandleUdpPacket(
+    rtgn_Server* server,
+    size_t packetSize,
+    UdpClientPacket* packet);
+
 #endif

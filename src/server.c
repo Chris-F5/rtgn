@@ -9,15 +9,15 @@
 #include "./socket.h"
 #include "./server_packet_handle.h"
 
-static void acceptNewConnections(rtgn_Server* server)
+static void acceptTcpConnections(rtgn_Server* server)
 {
     rtgn_tcpSrvSocket_t conSocket;
-    while(tcpSrvSocket_accept(server->srvSocket, &conSocket)) {
+    while(tcpSrvSocket_accept(server->tcpSocket, &conSocket)) {
         int i;
         for(i = 0; i < server->maxConnections; i++)
             if(server->connections[i].state == RTGN_SRV_CON_STATE_NO_CONNECTION) {
-                server->connections[i].state = RTGN_SRV_CON_STATE_NEW;
-                server->connections[i].socket = conSocket;
+                server->connections[i].state = RTGN_SRV_CON_STATE_CONNECTING;
+                server->connections[i].tcpSocket = conSocket;
                 printf("new connection\n");
                 break;
             }
@@ -30,14 +30,14 @@ static void acceptNewConnections(rtgn_Server* server)
     }
 }
 
-static void handleConnectionPackets(rtgn_Server* server)
+static void handleTcpPackets(rtgn_Server* server)
 {
     ssize_t bytesRead;
     for(rtgn_srvConIndex_t con = 0; con < server->maxConnections; con++)
         while(server->connections[con].state != RTGN_SRV_CON_STATE_NO_CONNECTION) {
             tcpSrvConSocket_read(
-                server->connections[con].socket,
-                RTGN_TCP_SERVER_PACKET_BUFFER_SIZE,
+                server->connections[con].tcpSocket,
+                RTGN_PACKET_BUFFER_SIZE,
                 server->packetBuffer,
                 &bytesRead);
             if(bytesRead <= 0) break;
@@ -45,15 +45,32 @@ static void handleConnectionPackets(rtgn_Server* server)
                 server,
                 con,
                 bytesRead,
-                (TcpPacket*)server->packetBuffer);
+                server->packetBuffer);
         }
+}
+
+static void handleUdpPackets(rtgn_Server* server)
+{
+    ssize_t bytesRead;
+    rtgn_networkAddress_t addr;
+    for(;;) {
+        udpSrvSocket_read(
+            server->udpSocket,
+            RTGN_PACKET_BUFFER_SIZE,
+            server->packetBuffer,
+            &bytesRead,
+            &addr);
+        if(bytesRead <= 0) break;
+        serverHandleUdpPacket(server, bytesRead, server->packetBuffer);
+    }
 }
 
 void rtgn_initServer(rtgn_Server* server, int port, int maxConnections)
 {
     server->port = port;
-    server->srvSocket = tcpSrvSocket_create(port);
-    server->packetBuffer = emalloc(RTGN_TCP_SERVER_PACKET_BUFFER_SIZE);
+    server->tcpSocket = tcpSrvSocket_create(port);
+    server->udpSocket = udpSrvSocket_create(port);
+    server->packetBuffer = emalloc(RTGN_PACKET_BUFFER_SIZE);
     server->maxConnections = maxConnections;
     server->connections = emalloc(maxConnections * sizeof(rtgn_SrvCon));
     for(int i = 0; i < maxConnections; i++)
@@ -62,13 +79,15 @@ void rtgn_initServer(rtgn_Server* server, int port, int maxConnections)
 
 void rtgn_tickServer(rtgn_Server* server)
 {
-    acceptNewConnections(server);
-    handleConnectionPackets(server);
+    acceptTcpConnections(server);
+    handleTcpPackets(server);
+    handleUdpPackets(server);
 }
 
 void rtgn_destroyServer(rtgn_Server* server)
 {
-    tcpSrvSocket_close(server->srvSocket);
+    tcpSrvSocket_close(server->tcpSocket);
+    tcpSrvSocket_close(server->udpSocket);
     free(server->packetBuffer);
     free(server->connections);
 }

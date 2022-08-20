@@ -12,7 +12,10 @@ typedef struct rtgn_Client rtgn_Client;
 struct rtgn_Client
 {
     rtgn_clientState_t state;
-    rtgn_tcpClientSocket_t socket;
+    rtgn_srvConIndex_t conIndex;
+    rtgn_networkAddress_t srvAddr;
+    rtgn_tcpClientSocket_t tcpSocket;
+    rtgn_udpClientSocket_t udpSocket;
     rtgn_game_state_t* gameState;
     rtgn_init_game_state_f initGameState;
     rtgn_tick_game_state_f tickGameState;

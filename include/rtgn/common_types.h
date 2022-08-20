@@ -17,13 +17,17 @@ struct rtgn_Input
 
 /* GAME STATE */
 typedef void rtgn_game_state_t;
-typedef void (*rtgn_init_game_state_f)(rtgn_game_state_t* gameState, int playerCount);
-typedef void (*rtgn_tick_game_state_f)(rtgn_game_state_t* gameState, rtgn_Input* playerInputs);
+typedef void (*rtgn_init_game_state_f)
+    (rtgn_game_state_t* gameState, int playerCount);
+typedef void (*rtgn_tick_game_state_f)
+    (rtgn_game_state_t* gameState, rtgn_Input* playerInputs);
 
 /* NETWORKING */
 typedef struct sockaddr_in rtgn_networkAddress_t;
 typedef int rtgn_tcpSrvSocket_t;
 typedef int rtgn_tcpSrvConSocket_t;
 typedef int rtgn_tcpClientSocket_t;
+typedef int rtgn_udpSrvSocket_t;
+typedef int rtgn_udpClientSocket_t;
 
 #endif

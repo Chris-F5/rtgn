@@ -29,10 +29,10 @@ void handleGreet(TCP_PACKET_HANDLE_PARAMS)
 
     TcpPacket_GreetClient res;
     res.type = TCP_PACKET_TYPE_GREET_CLIENT;
-    res.number = 42;
+    res.conIndex = conIndex;
 
     tcpSrvConSocket_write(
-        server->connections[conIndex].socket,
+        server->connections[conIndex].tcpSocket,
         sizeof(res),
         &res);
 }
@@ -66,4 +66,68 @@ void serverHandleTcpPacket(
         return;
     }
     handler(server, conIndex, packetSize, packet);
+}
+
+#define UDP_PACKET_HANDLE_PARAMS \
+    rtgn_Server* server, \
+    rtgn_srvConIndex_t conIndex, \
+    size_t packetSize, \
+    UdpClientPacket* packet
+
+void handleTest(UDP_PACKET_HANDLE_PARAMS)
+{
+    UdpClientPacket_Test* test;
+    test = (UdpClientPacket_Test*)packet;
+
+    if(packetSize != sizeof(UdpClientPacket_Test)) {
+        warn("received udp client test packet with invalid size");
+        return;
+    }
+
+    printf("received udp client test packet; number: %d\n", test->number);
+}
+
+void (*udpPacketHandlers[])(UDP_PACKET_HANDLE_PARAMS) = {
+    [UDP_CLIENT_PACKET_TYPE_TEST] = handleTest,
+};
+
+void serverHandleUdpPacket(
+    rtgn_Server* server,
+    size_t packetSize,
+    UdpClientPacket* packet)
+{
+    if(packetSize < sizeof(UdpClientPacket)) {
+        warn("received udp client packet that is too small");
+        return;
+    }
+    if(packet->type < 0) {
+        warn("received udp client packet with negative type");
+        return;
+    }
+    if(packet->type > sizeof(udpPacketHandlers) / sizeof(udpPacketHandlers[0])) {
+        warn("received udp client packet with type larget than expected");
+        return;
+    }
+    void (*handler)(UDP_PACKET_HANDLE_PARAMS);
+    handler = udpPacketHandlers[packet->type];
+    if(handler == NULL) {
+        warn("received udp client packet with unexpected type");
+        return;
+    }
+    if(packet->conIndex < 0) {
+        warn("reveived udp client packet with negative connection index");
+        return;
+    }
+    if (packet->conIndex >= server->maxConnections) {
+        warn("received udp client packet with invalid connection index (out of \
+bounds)");
+        return;
+    }
+    if(server->connections[packet->conIndex].state 
+        == RTGN_SRV_CON_STATE_NO_CONNECTION) {
+      warn("received udp client packet with invalid connection index (no \
+connection)");
+      return;
+    }
+    handler(server, packet->conIndex, packetSize, packet);
 }

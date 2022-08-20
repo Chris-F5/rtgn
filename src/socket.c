@@ -63,14 +63,17 @@ void tcpSrvConSocket_read(
     ssize_t* bytesRead)
 {
     *bytesRead = read(con, buffer, bufferSize);
-    if(bytesRead < 0 && errno != EAGAIN && errno != EWOULDBLOCK)
-        die("failed to read bytes from tcp server cnnection socket '%s'", strerror(errno));
+    if(bytesRead < 0) {
+        if(errno != EAGAIN && errno != EWOULDBLOCK)
+            die("failed to read bytes from tcp server cnnection socket '%s'", strerror(errno));
+        *bytesRead = 0;
+    }
 }
 
 void tcpSrvConSocket_write(
     rtgn_tcpSrvConSocket_t con,
     size_t bufferSize,
-    void* buffer)
+    const void* buffer)
 {
     ssize_t bytesWritten = write(con, buffer, bufferSize);
     if(bytesWritten < 0 && (errno == EAGAIN || errno == EWOULDBLOCK))
@@ -112,14 +115,17 @@ void tcpClientSocket_read(
     ssize_t* bytesRead)
 {
     *bytesRead = read(sock, buffer, bufferSize);
-    if(bytesRead < 0 && errno != EAGAIN && errno != EWOULDBLOCK)
-        die("failed to read bytes from tcp client socket '%s'", strerror(errno));
+    if(bytesRead < 0) {
+        if(errno != EAGAIN && errno != EWOULDBLOCK)
+            die("failed to read bytes from tcp client socket '%s'", strerror(errno));
+        *bytesRead = 0;
+    }
 }
 
 void tcpClientSocket_write(
     rtgn_tcpClientSocket_t sock,
     size_t bufferSize,
-    void* buffer)
+    const void* buffer)
 {
     ssize_t bytesWritten = write(sock, buffer, bufferSize);
     if(bytesWritten < 0 && (errno == EAGAIN || errno == EWOULDBLOCK))
@@ -134,4 +140,153 @@ void tcpClientSocket_close(rtgn_tcpClientSocket_t sock)
 {
     if(close(sock) < 0)
         die("failed to close tcp client socket '%s'", strerror(errno));
+}
+
+/* UDP SERVER SOCKET */
+
+rtgn_udpSrvSocket_t udpSrvSocket_create(int port)
+{
+    int sock;
+
+    sock = socket(AF_INET, SOCK_DGRAM, 0);
+    if(sock < 0)
+        die("failed to create udp server socket '%s'", strerror(errno));
+    if(fcntl(sock, F_SETFL, fcntl(sock, F_GETFL) | O_NONBLOCK) < 0)
+        die(
+            "failed to set nonblock flag on udp server socket '%s'",
+            strerror(errno));
+
+    struct sockaddr_in addr;
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = INADDR_ANY;
+    addr.sin_port = htons(port);
+    bzero(&addr.sin_zero, sizeof(addr.sin_zero));
+
+    if(bind(sock, (struct sockaddr*)&addr, sizeof(addr)) < 0)
+        die("failed to bind udp server socket '%s'", strerror(errno));
+
+    return sock;
+}
+
+void udpSrvSocket_read(
+    rtgn_udpSrvSocket_t sock,
+    size_t bufferSize,
+    void* buffer,
+    ssize_t* bytesRead,
+    rtgn_networkAddress_t* cliAddr)
+{
+    socklen_t addrLen;
+    addrLen = sizeof(struct sockaddr);
+    *bytesRead = recvfrom(
+        sock,
+        buffer,
+        bufferSize,
+        0,
+        (struct sockaddr*)cliAddr,
+        &addrLen);
+
+    if(*bytesRead < 0) {
+        if(errno != EAGAIN && errno != EWOULDBLOCK)
+            die("failed to read udp server socket '%s'", strerror(errno));
+        *bytesRead = 0;
+        return;
+    }
+
+    if(addrLen != sizeof(*cliAddr) || cliAddr->sin_family != AF_INET)
+        die("failed to read udp server socket, invalid address");
+}
+
+void udpSrvSocket_write(
+    rtgn_udpSrvSocket_t sock,
+    rtgn_networkAddress_t cliAddr,
+    size_t bufferSize,
+    const void* buffer)
+{
+    ssize_t bytesSent;
+    bytesSent = sendto(
+        sock,
+        buffer,
+        bufferSize,
+        0,
+        (struct sockaddr*)&cliAddr,
+        sizeof(cliAddr));
+
+    if(bytesSent != bufferSize)
+        die("failed to write udp server socket '%s'", strerror(errno));
+}
+
+void udpSrvSocket_close(rtgn_udpSrvSocket_t sock)
+{
+    if(close(sock) < 0)
+        die("failed to close udp server socket '%s'", strerror(errno));
+}
+
+/* UDP CLIENT SOCKET */
+
+rtgn_udpClientSocket_t udpClientSocket_create(void)
+{
+    int sock;
+
+    sock = socket(AF_INET, SOCK_DGRAM, 0);
+    if(sock < 0)
+        die("failed to create udp client socket '%s'", strerror(errno));
+    if(fcntl(sock, F_SETFL, fcntl(sock, F_GETFL) | O_NONBLOCK) < 0)
+        die(
+            "failed to set nonblock flag on udp client socket '%s'",
+            strerror(errno));
+
+    return sock;
+}
+
+void udpClientSocket_read(
+    rtgn_udpClientSocket_t sock,
+    size_t bufferSize,
+    void* buffer,
+    ssize_t* bytesRead)
+{
+    struct sockaddr_in srcAddr;
+    socklen_t addrLen;
+    addrLen = sizeof(struct sockaddr);
+    *bytesRead = recvfrom(
+        sock,
+        buffer,
+        bufferSize,
+        0,
+        (struct sockaddr*)&srcAddr,
+        &addrLen);
+
+    if(*bytesRead < 0) {
+        if(errno != EAGAIN && errno != EWOULDBLOCK)
+            die("failed to read udp client socket '%s'", strerror(errno));
+        *bytesRead = 0;
+        return;
+    }
+
+    if(addrLen != sizeof(srcAddr) || srcAddr.sin_family != AF_INET)
+        die("failed to read udp client socket, invalid address");
+}
+
+void udpClientSocket_write(
+    rtgn_udpClientSocket_t sock,
+    rtgn_networkAddress_t srvAddr,
+    size_t bufferSize,
+    const void* buffer)
+{
+    ssize_t bytesSent;
+    bytesSent = sendto(
+        sock,
+        buffer,
+        bufferSize,
+        0,
+        (struct sockaddr*)&srvAddr,
+        sizeof(srvAddr));
+
+    if(bytesSent != bufferSize)
+        die("failed to write udp client socket '%s'", strerror(errno));
+}
+
+void udpClientSocket_close(rtgn_udpClientSocket_t sock)
+{
+    if(close(sock) < 0)
+        die("failed to close udp client socket '%s'", strerror(errno));
 }

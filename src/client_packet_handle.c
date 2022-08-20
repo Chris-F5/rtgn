@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include "./utils.h"
+#include "./socket.h"
 
 #define HANDLER_PARAMS rtgn_Client* client, size_t packetSize, TcpPacket* packet
 
@@ -17,7 +18,19 @@ void handleGreetClient(HANDLER_PARAMS)
     }
 
     client->state = RTGN_CLIENT_STATE_CONNECTED;
-    printf("server greeted '%d'\n", greet->number);
+    client->conIndex = greet->conIndex;
+    printf("server greeted '%d'\n", greet->conIndex);
+
+    UdpClientPacket_Test testRes;
+    testRes.type = UDP_CLIENT_PACKET_TYPE_TEST;
+    testRes.conIndex = client->conIndex;
+    testRes.number = 42;
+
+    udpClientSocket_write(
+        client->udpSocket,
+        client->srvAddr,
+        sizeof(testRes),
+        &testRes);
 }
 
 void (*tcpHandlers[])(HANDLER_PARAMS) = {
