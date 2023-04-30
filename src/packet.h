@@ -35,20 +35,38 @@ struct TcpPacket_GreetClient
     rtgn_srvConIndex_t conIndex;
 };
 
-/* UDP */
+/* UDP SERVER */
 
-#define UDP_CLIENT_PACKET_TYPE_TEST 0
+#define UDP_SRV_PACKET_TYPE_TEST 0
 
-typedef struct UdpClientPacket UdpClientPacket;
-struct UdpClientPacket
+typedef struct UdpSrvPacket UdpSrvPacket;
+struct UdpSrvPacket
+{
+    udpPacketType_t type;
+    char data[];
+};
+
+typedef struct UdpSrvPacket_Test UdpSrvPacket_Test;
+struct UdpSrvPacket_Test
+{
+    udpPacketType_t type;
+    uint32_t number;
+};
+
+/* UDP CLIENT */
+
+#define UDP_CLI_PACKET_TYPE_TEST 0
+
+typedef struct UdpCliPacket UdpCliPacket;
+struct UdpCliPacket
 {
     udpPacketType_t type;
     rtgn_srvConIndex_t conIndex;
     char data[];
 };
 
-typedef struct UdpClientPacket_Test UdpClientPacket_Test;
-struct UdpClientPacket_Test
+typedef struct UdpCliPacket_Test UdpCliPacket_Test;
+struct UdpCliPacket_Test
 {
     udpPacketType_t type;
     rtgn_srvConIndex_t conIndex;

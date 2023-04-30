@@ -37,14 +37,18 @@ rtgn_tcpSrvSocket_t tcpSrvSocket_create(int port)
 
 int tcpSrvSocket_accept(
     rtgn_tcpSrvSocket_t srvSock,
-    rtgn_tcpSrvConSocket_t* con)
+    rtgn_tcpSrvConSocket_t* con,
+    rtgn_networkAddress_t* addr)
 {
-    *con = accept(srvSock, NULL, NULL);
+    socklen_t addrLen;
+    *con = accept(srvSock, (struct sockaddr*)addr, &addrLen);
     if(*con < 0 && errno != EAGAIN && errno != EWOULDBLOCK)
         die("failed to accept connection from tcp server socket '%s'", strerror(errno));
     if(*con < 0) return 0;
     if(fcntl(*con, F_SETFL, fcntl(*con, F_GETFL) | O_NONBLOCK) < 0)
         die("failed to set nonblock flag on tcp server con socket '%s'", strerror(errno));
+    if(addrLen != sizeof(*addr) || addr->sin_family != AF_INET)
+        die("failed to read udp server socket, invalid address");
     return 1;
 }
 
@@ -92,9 +96,9 @@ void tcpSrvConSocket_close(rtgn_tcpSrvConSocket_t sock)
 
 /* TCP CLIENT SOCKET */
 
-rtgn_tcpClientSocket_t tcpClientSocket_create(rtgn_networkAddress_t srvAddr)
+rtgn_tcpCliSocket_t tcpCliSocket_create(rtgn_networkAddress_t srvAddr)
 {
-    rtgn_tcpClientSocket_t sock;
+    rtgn_tcpCliSocket_t sock;
 
     sock = socket(AF_INET, SOCK_STREAM, 0);
     if(sock < 0)
@@ -108,8 +112,8 @@ rtgn_tcpClientSocket_t tcpClientSocket_create(rtgn_networkAddress_t srvAddr)
     return sock;
 }
 
-void tcpClientSocket_read(
-    rtgn_tcpClientSocket_t sock,
+void tcpCliSocket_read(
+    rtgn_tcpCliSocket_t sock,
     size_t bufferSize,
     void* buffer,
     ssize_t* bytesRead)
@@ -122,8 +126,8 @@ void tcpClientSocket_read(
     }
 }
 
-void tcpClientSocket_write(
-    rtgn_tcpClientSocket_t sock,
+void tcpCliSocket_write(
+    rtgn_tcpCliSocket_t sock,
     size_t bufferSize,
     const void* buffer)
 {
@@ -136,7 +140,7 @@ void tcpClientSocket_write(
         die("failed to write full buffer to tcp client socket");
 }
 
-void tcpClientSocket_close(rtgn_tcpClientSocket_t sock)
+void tcpCliSocket_close(rtgn_tcpCliSocket_t sock)
 {
     if(close(sock) < 0)
         die("failed to close tcp client socket '%s'", strerror(errno));
@@ -223,7 +227,7 @@ void udpSrvSocket_close(rtgn_udpSrvSocket_t sock)
 
 /* UDP CLIENT SOCKET */
 
-rtgn_udpClientSocket_t udpClientSocket_create(void)
+rtgn_udpCliSocket_t udpCliSocket_create(void)
 {
     int sock;
 
@@ -238,13 +242,13 @@ rtgn_udpClientSocket_t udpClientSocket_create(void)
     return sock;
 }
 
-void udpClientSocket_read(
-    rtgn_udpClientSocket_t sock,
+void udpCliSocket_read(
+    rtgn_udpCliSocket_t sock,
     size_t bufferSize,
     void* buffer,
-    ssize_t* bytesRead)
+    ssize_t* bytesRead,
+    rtgn_networkAddress_t* srvAddr)
 {
-    struct sockaddr_in srcAddr;
     socklen_t addrLen;
     addrLen = sizeof(struct sockaddr);
     *bytesRead = recvfrom(
@@ -252,7 +256,7 @@ void udpClientSocket_read(
         buffer,
         bufferSize,
         0,
-        (struct sockaddr*)&srcAddr,
+        (struct sockaddr*)srvAddr,
         &addrLen);
 
     if(*bytesRead < 0) {
@@ -262,12 +266,12 @@ void udpClientSocket_read(
         return;
     }
 
-    if(addrLen != sizeof(srcAddr) || srcAddr.sin_family != AF_INET)
+    if(addrLen != sizeof(*srvAddr) || srvAddr->sin_family != AF_INET)
         die("failed to read udp client socket, invalid address");
 }
 
-void udpClientSocket_write(
-    rtgn_udpClientSocket_t sock,
+void udpCliSocket_write(
+    rtgn_udpCliSocket_t sock,
     rtgn_networkAddress_t srvAddr,
     size_t bufferSize,
     const void* buffer)
@@ -285,7 +289,7 @@ void udpClientSocket_write(
         die("failed to write udp client socket '%s'", strerror(errno));
 }
 
-void udpClientSocket_close(rtgn_udpClientSocket_t sock)
+void udpCliSocket_close(rtgn_udpCliSocket_t sock)
 {
     if(close(sock) < 0)
         die("failed to close udp client socket '%s'", strerror(errno));

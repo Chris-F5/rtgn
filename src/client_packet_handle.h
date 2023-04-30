@@ -6,6 +6,13 @@
 
 #include "./packet.h"
 
-void clientHandleTcpPacket(rtgn_Client* client, size_t packetSize, TcpPacket* packet);
+void clientHandleTcpPacket(
+    rtgn_Client* client,
+    size_t packetSize,
+    TcpPacket* packet);
+void clientHandleUdpPacket(
+    rtgn_Client* client,
+    size_t packetSize,
+    UdpSrvPacket* packet);
 
 #endif

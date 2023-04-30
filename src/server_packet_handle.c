@@ -72,31 +72,43 @@ void serverHandleTcpPacket(
     rtgn_Server* server, \
     rtgn_srvConIndex_t conIndex, \
     size_t packetSize, \
-    UdpClientPacket* packet
+    UdpCliPacket* packet
 
 void handleTest(UDP_PACKET_HANDLE_PARAMS)
 {
-    UdpClientPacket_Test* test;
-    test = (UdpClientPacket_Test*)packet;
+    UdpCliPacket_Test* test;
+    test = (UdpCliPacket_Test*)packet;
 
-    if(packetSize != sizeof(UdpClientPacket_Test)) {
+    if(packetSize != sizeof(UdpCliPacket_Test)) {
         warn("received udp client test packet with invalid size");
         return;
     }
 
-    printf("received udp client test packet; number: %d\n", test->number);
+    printf(
+        "received udp client test packet; number: %d; con: %d\n",
+        test->number,
+        test->conIndex);
+
+    UdpSrvPacket_Test res;
+    res.type = UDP_SRV_PACKET_TYPE_TEST;
+    res.number = 55;
+    udpSrvSocket_write(
+        server->udpSocket,
+        server->connections[test->conIndex].networkAddr,
+        sizeof(res),
+        &res);
 }
 
 void (*udpPacketHandlers[])(UDP_PACKET_HANDLE_PARAMS) = {
-    [UDP_CLIENT_PACKET_TYPE_TEST] = handleTest,
+    [UDP_CLI_PACKET_TYPE_TEST] = handleTest,
 };
 
 void serverHandleUdpPacket(
     rtgn_Server* server,
     size_t packetSize,
-    UdpClientPacket* packet)
+    UdpCliPacket* packet)
 {
-    if(packetSize < sizeof(UdpClientPacket)) {
+    if(packetSize < sizeof(UdpCliPacket)) {
         warn("received udp client packet that is too small");
         return;
     }

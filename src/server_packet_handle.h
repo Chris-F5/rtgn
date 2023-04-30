@@ -15,6 +15,6 @@ void serverHandleTcpPacket(
 void serverHandleUdpPacket(
     rtgn_Server* server,
     size_t packetSize,
-    UdpClientPacket* packet);
+    UdpCliPacket* packet);
 
 #endif

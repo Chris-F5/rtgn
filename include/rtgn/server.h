@@ -15,6 +15,7 @@ typedef struct rtgn_SrvCon rtgn_SrvCon;
 struct rtgn_SrvCon
 {
     rtgn_srvConState_t state;
+    rtgn_networkAddress_t networkAddr;
     rtgn_tcpSrvConSocket_t tcpSocket;
 };
 

@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <arpa/inet.h> /* TEMP */
 
 #include "rtgn/config.h"
 
@@ -12,13 +13,16 @@
 static void acceptTcpConnections(rtgn_Server* server)
 {
     rtgn_tcpSrvSocket_t conSocket;
-    while(tcpSrvSocket_accept(server->tcpSocket, &conSocket)) {
+    rtgn_networkAddress_t addr;
+    while(tcpSrvSocket_accept(server->tcpSocket, &conSocket, &addr)) {
         int i;
         for(i = 0; i < server->maxConnections; i++)
             if(server->connections[i].state == RTGN_SRV_CON_STATE_NO_CONNECTION) {
                 server->connections[i].state = RTGN_SRV_CON_STATE_CONNECTING;
+                server->connections[i].networkAddr = addr;
                 server->connections[i].tcpSocket = conSocket;
                 printf("new connection\n");
+                printf("%d\n", addr.sin_port);
                 break;
             }
         if(i == server->maxConnections) {
@@ -61,6 +65,7 @@ static void handleUdpPackets(rtgn_Server* server)
             &bytesRead,
             &addr);
         if(bytesRead <= 0) break;
+        printf("%d\n", addr.sin_port);
         serverHandleUdpPacket(server, bytesRead, server->packetBuffer);
     }
 }

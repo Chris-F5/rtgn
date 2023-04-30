@@ -14,8 +14,8 @@ struct rtgn_Client
     rtgn_clientState_t state;
     rtgn_srvConIndex_t conIndex;
     rtgn_networkAddress_t srvAddr;
-    rtgn_tcpClientSocket_t tcpSocket;
-    rtgn_udpClientSocket_t udpSocket;
+    rtgn_tcpCliSocket_t tcpSocket;
+    rtgn_udpCliSocket_t udpSocket;
     rtgn_game_state_t* gameState;
     rtgn_init_game_state_f initGameState;
     rtgn_tick_game_state_f tickGameState;
